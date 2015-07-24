@@ -1,0 +1,53 @@
+{
+    "articles" : [
+        {
+            "title" : "Smugglers use 'back door' to Obama family's homeland",
+            "description" : "Smugglers use 'rat routes' into northern Kenya",
+            "pubDate" : "2015-07-24T09:19:02Z",
+            "link" : "http://edition.cnn.com/2015/07/24/africa/kenya-back-door-porous-border-security-threat/index.html",
+            "tags":["Obama","Smugglers","Kenya"]
+        },
+        {
+            "title" : "Personal journey",
+            "description" : "The first time he came to Kenya, they called him Barry.",
+            "pubDate" : "2015-07-24T09:24:36Z",
+            "link" : "http://edition.cnn.com/2015/07/23/politics/president-barack-obama-kenya-trip/index.html",
+            "tags" : ["Obama","Journey","Kenya"]
+        },
+        {
+            "title" : "Meet the rest of the Obamas",
+            "description" : "",
+            "pubDate" : "2015-07-24T08:54:43Z",
+            "link" : "http://edition.cnn.com/2015/07/23/africa/gallery/obama-kenya-family-visit/index.html",
+            "tags" : ["Obama","Kenya"]
+        },
+        {
+            "title" : "Obamamania sweeps Kenya",
+            "description" : "Obama's visit to his father's homeland might be a short one, but Kenyan entrepreneurs are hoping that it will have long lasting benefits on the country's economic development.",
+            "pubDate" : "2015-07-24T08:54:43Z",
+            "link" : "http://edition.cnn.com/2015/07/23/africa/kenya-visit-barack-obama/index.html",
+            "tags" : ["Obama","Kenya","Visit"]
+        },
+        {
+            "title" : "'Manila, it was fun': Chris Brown finally takes off",
+            "description" : "Singer Chris Brown left the Philippines on Friday after a contract dispute initially prevented him from departing the country.",
+            "pubDate" : "2015-07-24T09:05:03Z",
+            "link" : "http://edition.cnn.com/2015/07/24/entertainment/chris-brown-philippines-departure/index.html",
+            "tags" : ["Manila","Chris Brown","Philippines"]
+        },
+        {
+            "title" : "Theater gunman a 'drifter'",
+            "description" : "Authorities have learned more about Lafayette, Louisiana",
+            "pubDate" : "2015-07-24T07:56:58Z",
+            "link" : "http://edition.cnn.com/2015/07/24/us/louisiana-theater-shooting/index.html",
+            "tags" : ["Drifter","Gunman","Theater"]
+        },
+        {
+            "title" : "NASA finds 'Earth 2.0'",
+            "description" : "NASA said Thursday that its Kepler spacecraft has spotted Earth's bigger, older cousin",
+            "pubDate" : "2015-07-24T00:12:31Z",
+            "link" : "http://edition.cnn.com/2015/07/23/us/feat-nasa-kepler-planet-discovery/index.html",
+            "tags" : ["NASA","Earth","Kepler"]
+        }
+    ]
+}

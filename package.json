@@ -1,0 +1,17 @@
+{
+  "name": "listing_app",
+  "version": "1.0.0",
+  "description": "App for creating filtered listings with AngularJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James J Jones",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.3",
+    "bootstrap": "^3.3.5",
+    "express": "^4.13.1",
+    "jquery": "^2.1.4"
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Angular Listing App</title>
+        <link rel='stylesheet' href='css/bootstrap.min.css' />
+        <link rel='stylesheet' href='css/style.css' />
+    </head>
+    <body data-ng-app="listingApp">
+        <div class="container">
+            <section data-ng-controller="listingCtrl">
+                <h2>{{title}}</h2>
+                <div class="input-group">
+                    <div class="input-group-addon"><div class="glyphicon glyphicon-search"></div></div>
+                    <input type="text" id="search" data-ng-model="filters.query" placeholder="Search Text" class="form-control" />
+                </div>
+                <br />
+                <div class="row">
+                    <div data-ng-repeat="tag in filters.tags" class="col-xs- col-sm-4 col-md-2">
+                        <div class="checkbox">
+                            <label>
+                                <input id="{{tag.label}}" type="checkbox" data-ng-model="tag.selected" data-ng-checked="tag.selected" />
+                                {{tag.label}}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="controls">
+                    <div class="input-group">
+                        <div class="input-group-addon">Sort By</div>
+                        <select id="sortBy" data-ng-model="descending" class="form-control">
+                            <option value="true">Newest</option>
+                            <option value="">Oldest</option>
+                        </select>
+                    </div>
+                </div>
+                <br />
+                <h3>Results</h3>
+                <p>{{filtered.length}} articles of {{articles.length}} Match your query</p>
+                <ul class="list-unstyled">
+                    <li data-ng-repeat="article in filtered =(articles | newsFilter: filters) | orderBy: 'pubDate': descending | limitTo:viewLimit">
+                        <h3><a href="{{article.link}}">{{article.title}}</a></h3>
+                        <p>{{article.pubDate | date:'dd/MM/yyyy'}}</p>
+                        <p>{{article.description}}</p>
+                    </li>
+                </ul>
+                <br />
+                <button class="btn btn-lg btn-primary" data-ng-click="viewMore(2)" data-ng-hide="viewLimit >= filtered.length">View More</button>
+            </section>
+        </div>
+        <script src="js/bundle.js"></script>
+    </body>
+</html>
