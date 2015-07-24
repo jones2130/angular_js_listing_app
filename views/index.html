@@ -41,7 +41,7 @@
                 <p>{{filtered.length}} articles of {{articles.length}} Match your query</p>
                 <ul class="list-unstyled">
                     <li data-ng-repeat="article in filtered =(articles | newsFilter: filters) | orderBy: 'pubDate': descending | limitTo:viewLimit">
-                        <h3><a href="{{article.link}}">{{article.title}}</a></h3>
+                        <h3><a target="_blank" href="{{article.link}}">{{article.title}}</a></h3>
                         <p>{{article.pubDate | date:'dd/MM/yyyy'}}</p>
                         <p>{{article.description}}</p>
                     </li>
