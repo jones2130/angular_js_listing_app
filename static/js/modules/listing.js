@@ -4,37 +4,7 @@ angular.module('listing.module',['listing.services','listing.filters']).controll
     $scope.viewLimit = 4;
     $scope.descending = true;
     $scope.filters = {
-        query: "",
-        tags: [
-            {
-                label:"Obama",
-                selected:false
-            },
-            {
-                label:"Smugglers",
-                selected:false
-            },
-            {
-                label:"Kenya",
-                selected:false
-            },
-            {
-                label:"Visit",
-                selected:false
-            },
-            {
-                label:"Chris Brown",
-                selected:false
-            },
-            {
-                label:"Theater",
-                selected:false
-            },
-            {
-                label:"NASA",
-                selected:false
-            }
-        ]
+        query: ""
     };
     $scope.setData = function(data){
         $scope.articles = data.articles;
@@ -44,5 +14,5 @@ angular.module('listing.module',['listing.services','listing.filters']).controll
         $scope.viewLimit += num;
     };
     
-    data.get('data/listing_data.json', $scope.setData);
+    data.get('data/get/rss', $scope.setData);
 }]);

@@ -42,12 +42,13 @@
                 <ul class="list-unstyled">
                     <li data-ng-repeat="article in filtered =(articles | newsFilter: filters) | orderBy: 'pubDate': descending | limitTo:viewLimit">
                         <h3><a target="_blank" href="{{article.link}}">{{article.title}}</a></h3>
-                        <p>{{article.pubDate | date:'dd/MM/yyyy'}}</p>
+                        <p data-ng-hide="article.author == ''">By {{article.author}}</p>
+                        <p>{{article.pubDate | date:'MM/dd/yyyy'}}</p>
                         <p>{{article.description}}</p>
                     </li>
                 </ul>
                 <br />
-                <button class="btn btn-lg btn-primary" data-ng-click="viewMore(2)" data-ng-hide="viewLimit >= filtered.length">View More</button>
+                <button class="btn btn-lg btn-primary" data-ng-click="viewMore(4)" data-ng-hide="viewLimit >= filtered.length">View More</button>
             </section>
         </div>
         <script src="js/bundle.js"></script>
